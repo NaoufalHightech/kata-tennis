@@ -11,6 +11,11 @@ public class TennisGame {
         this.playerTwoScore = 0;
     }
 
+    public TennisGame(int score1, int score2) {
+        this.playerOneScore = score1;
+        this.playerTwoScore = score2;
+    }
+
     public String score() {
         if (this.playerOneScore == 1 && this.playerTwoScore == 1) {
             return "FIFTEEN - FIFTEEN";
@@ -33,5 +38,13 @@ public class TennisGame {
 
     public void playerTwoScores() {
         this.playerTwoScore++;
+    }
+
+    public Integer getPlayerOneScore() {
+        return playerOneScore;
+    }
+
+    public Integer getPlayerTwoScore() {
+        return playerTwoScore;
     }
 }
